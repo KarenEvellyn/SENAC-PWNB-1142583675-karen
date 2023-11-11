@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title>Cadastro de Clientes</title>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Clientes</h1>
+  </header>
+  <main>
+        <form id="cliente-form">
+            <div class="campos">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campos">
+              <label for ="sobrenome">Sobrenome:</label>
+              <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+             
+            </div>
+            <div class="campos">
+              <label for="tipo-cliente">Tipo de Cliente:</label>
+              <select id="tipo-cliente" name="tipo-cliente">
+                <option value="Ouro">Ouro</option>
+                <option value="Prata">Prata</option>
+                <option value="Platina">Platina</option>
+                <option value="Diamante">Diamante</option>
+              </select>
+            </div>
+             
+            </div>
+            <div class="campos">
+              <label for="data-nascimento">Data de Nascimento:</label>
+              <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+            <div class="campos">
+              <label for="cep">CEP:</label>
+              <input type="text" id="cep" name="cep" required >
+            </div>
+            <div class="campos">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <div class="campos">
+              <label for="endereco">Endereço:</label>
+              <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="campos">
+              <label for="numero">Número:</label>
+              <input type="number" id="numero" name="numero" required>
+            </div>
+          
+            <div class="botoes">
+              <button type="button" id="alterar" style="display: none" onclick="alterarCliente()">Alterar</button>
+              <button type="button" id="salvar" onclick="salvarCliente()">Salvar</button>
+              <button type="button" id="limpar">Limpar</button>
+            </div>
+          </form>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
