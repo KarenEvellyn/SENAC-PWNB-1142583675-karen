@@ -1,0 +1,96 @@
+
+body{
+    width: 100%;
+}
+
+
+.cabecalho{
+    background-color: blanchedalmond;
+    position: relative;
+    
+    height: 100px;
+
+}
+
+#logo{
+    position: relative;
+    bottom: 30px;
+}
+
+#menu{
+    position: relative;
+    left: 1200px;
+    bottom: 110px;
+}
+
+#menu a:link {
+    text-decoration: none;
+    color: black;
+   }
+   
+#menu a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.conteudo1{
+    width: 1605px;
+    height: 700px;
+    background-image: url(imgfundo.jpg) ;
+    background-size: cover;
+    background-position: center;
+   
+
+
+}
+.conteudo2 p{
+    text-decoration: none;
+    color: purple;
+}
+.conteudo2{
+    position: relative;
+    padding: 10px;
+    width: 700px;
+    height: 350px;
+    margin-bottom: 5px;
+
+  
+}
+
+.conteudo3 {
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    left: 757px;
+    bottom: 350px;
+}
+
+.conteudo5 {
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    left: 470px;
+    bottom: 100px;
+}
+.conteudo6 p{
+    text-decoration: none;
+    color: black;
+}
+footer {
+    background-color: blanchedalmond;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+

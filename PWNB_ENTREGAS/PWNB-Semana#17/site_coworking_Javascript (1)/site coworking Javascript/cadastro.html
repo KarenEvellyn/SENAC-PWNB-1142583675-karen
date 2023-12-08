@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Place Coworking</title>
+    <link href="login.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <style>
+        .cabecalho {
+            background-color: blanchedalmond;
+            position: relative;
+            width: 1600px;
+            height: 100px;
+        }
+
+        #logo {
+            position: relative;
+            bottom: 30px;
+        }
+
+        #menu {
+            position: relative;
+            left: 1200px;
+            bottom: 110px;
+        }
+
+        #menu a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: blanchedalmond;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div id="logo"><a href="PaginaInicial.html"><img src="imagem/logotipo.png" width="150px" height="150px"></a></div>
+       
+        <div id="menu">
+            <a href="PaginaInicial.html">Pagina Inicial</a>|
+            <a href="login.html">Login</a> |
+            <a href="cadastro.html">Cadastro</a> |      
+            <a href="QuemSomos.html">Quem Somos</a> 
+                
+        </div>
+    </div>
+
+    <div class="login-container">
+        <form name="FormCadastro" method="post" id="formulario">
+            <div class="box">
+                <h1>Cadastro</h1>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" class="input_text" name="nome" id="nome" placeholder="Nome"/> <br><br>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" class="input_text" name="email" id="email" placeholder="Email"/><br><br>
+                </div>
+
+                <div> 
+                    <label for="password">Senha</label>a
+                    <input id="password" name="password" required="required" type="password" placeholder="Senha" /><br><br>
+                </div>
+                <div> 
+                    <input type="button" class="button" value="Cadastrar" onclick="cadastrar()" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <footer>
+        <div class="contato">
+            <h2>Entre em contato</h2>
+            <p>Telefone (11) 5048-6079</p>
+            <p>E-mail:coworking@techplace.com.br</p>
+            <p>Endereço da Sede:Rua dos Empresários, nº 123, Jardim das Flores - CEP 04170-240 </p>
+            <p>CNPJ: 04. 836. 487/0001-97.</p>
+        </div>
+    </footer>
+
+    <!--<script>
+        function cadastrar() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha_cadastro').value;
+
+            if (!nome || !email || !senha) {
+                alert('Por favor, preencha todos os campos antes de cadastrar.');
+            } else {
+                var usuario = {
+                    nome: nome,
+                    email: email,
+                    senha: senha
+                };
+
+                localStorage.setItem('usuario', JSON.stringify(usuario));
+
+                alert('Cadastro realizado com sucesso!');
+            }
+        }
+    </script>-->
+</body>
+
+</html>

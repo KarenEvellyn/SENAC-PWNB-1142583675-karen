@@ -1,0 +1,132 @@
+<!DOCTYPE
+html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Place Coworking</title>
+    <link href="login.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div id="logo"><a href="#"><img src="imagem/logotipo.png" width="150px" height="150px"></a></div>
+       
+        <div id="menu">
+            <a href="PaginaInicial.html">Pagina Inicial</a>|
+            <a href="login.html">Login</a> |      
+            <a href="QuemSomos.html">Quem Somos</a> |
+            <a href="reserva.html">Reservas</a> |
+
+        </div>
+    </div>
+<div class="formulario">
+<h1>Reserve seu espaço conosco! </h1>
+<p>A sua comodidade é nossa prioridade, e estamos aqui 
+    para tornar sua experiência o mais agradável possível!</p>
+    <p>Sinta-se à vontade para explorar nossas opções e encontrar o local ideal para você!</p>
+<p> Oferecemos espaços em todo o território brasileiro, estamos ansiosos para recebê-lo(a) em breve!</p>
+<form name="FormReserva" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br></br>
+    <label for="localizacao"> Escolha a região em que deseja o espaço: </label>
+    <select id="localizacao" name="localizacao" required>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espirito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Peraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Roraima</option>
+        <option value="RR">Rondônia</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+    <br></br>
+    <label for="categoria">Escolha o tipo de reserva que deseja realizar: </label>
+    <select id="categoria" name="categoria" required>
+        <option value="Confort">Confort R$ 320/mês</option>
+        <option value="Master">Master R$ 550/mês</option>
+        <option value="Premium">Premium R$ 730/mês</option>
+    </select>
+    <br></br>
+        <label for="Data">Data da Reserva</label>
+    <input type="date" id="data" name="data" required>
+    <br></br>
+    <label for="horario">Qual Horário deseja agendar?</label>
+    <input type="time" id="horario" name="horario" required>
+    <br></br>
+    <button type="submit">Enviar reserva</button>
+   
+</form>
+
+</div>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<footer>
+    <div class="contato">
+        <h2>Entre em contato</h2>
+        <p>Telefone (11) 5048-6079</p>
+        <p>E-mail:coworking@techplace.com.br</p>
+        <p>Endereço da Sede:Rua dos Empresários, nº 123, Jardim das Flores - CEP 04170-240 </p>
+        <p>CNPJ: 04. 836. 487/0001-97.</p>
+    </div>
+</footer>
+</div>
+<script>
+    document.getElementById('button').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var localizacao = document.getElementById('localizacao').value;
+        var categoria = document.getElementById('categoria').value;
+        var data = document.getElementById('data').value;
+        var horario = document.getElementById('horario').value;
+
+        if (!nome || !email || !localizacao || !categoria || !data || !horario) {
+            alert('Por favor, preencha todos os campos obrigatórios antes de enviar a reserva.');
+        } else {
+            var reserva = {
+                nome: nome,
+                email: email,
+                localizacao: localizacao,
+                categoria: categoria,
+                data: data,
+                horario: horario
+            };
+
+            localStorage.setItem('reserva', JSON.stringify(reserva));
+
+            alert('Reserva realizada com sucesso!');
+        }
+    });
+</script>
+</body>
+</html>
