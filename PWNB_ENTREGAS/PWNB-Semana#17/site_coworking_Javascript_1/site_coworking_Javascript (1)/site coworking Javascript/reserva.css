@@ -1,0 +1,46 @@
+.cabecalho{
+    background-color: blanchedalmond;
+    position: relative;
+    width: 1600px;
+    height: 100px;
+
+}
+
+#logo{
+    position: relative;
+    bottom: 30px;
+}
+
+#menu{
+    position: relative;
+    left: 1200px;
+    bottom: 110px;
+}
+
+#menu a:link {
+    text-decoration: none;
+    color: black;
+   }
+   
+#menu a:hover {
+    text-decoration: underline;
+    color: black;
+
+
+}
+footer {
+    background-color: blanchedalmond;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
